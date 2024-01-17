@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Explore Saudi Arabia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Link to Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to Leaflet CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <!-- Link to custom CSS file -->
+<style media="screen">
+  /* Custom CSS file */
+
+/* Style the header */
+.header {
+  padding: 80px; /* some padding */
+  text-align: center; /* center the text */
+  background: url("Riyadh-The-Dead-Center-of-the-Saudi-Arabia-Kingdom1[1].jpg"); /* green background */
+  color: white; /* white text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the navigation bar */
+.navbar {
+  overflow: hidden; /* hide overflow */
+  background-color: #333; /* dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* make sure that the links stay side-by-side */
+  display: block; /* change the links from inline to block elements */
+  color: white; /* white text color */
+  text-align: center; /* center the text */
+  padding: 14px 20px; /* add some padding */
+  text-decoration: none; /* remove underline */
+}
+
+/* Change the color on hover */
+.navbar a:hover {
+  background-color: #ddd; /* light gray background */
+  color: black; /* black text color */
+}
+
+/* Add a right-aligned link */
+.navbar a.right {
+  float: right; /* float the link to the right */
+}
+
+/* Style the card images */
+.card img {
+  width: 100%; /* make the image fill the card */
+  height: 200px; /* set a fixed height */
+  object-fit: cover; /* scale and crop the image */
+}
+
+/* Style the map container */
+#map {
+  width: 100%; /* make the map fill the container */
+  height: 400px; /* set a fixed height */
+}
+
+/* Style the footer */
+.footer {
+  padding: 20px; /* some padding */
+  text-align: center; /* center the text */
+  background: #333; /* dark background color */
+  color: white; /* white text color */
+}
+
+</style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <h1>Explore Saudi Arabia</h1>
+    <p>Discover the beauty and diversity of this amazing country.</p>
+  </div>
+  <!-- Navigation -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="home.html">Explore</a>
+    <a href="contact.html" class="right">Contact</a>
+  </div>
+  <!-- Main content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        Tourism in Saudi Arabia
+Saudi Arabia’s rich heritage and traditions have been shaped by its position as a historic trade hub and the birthplace of Islam. In recent years, the Kingdom has undergone a significant cultural transformation, evolving century-old customs to fit the contemporary world we live in today, and one of the sectors that were significantly changed is tourism in Saudi Arabia
+      </div>
+      </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Madain_Saleh_(6811791359).jpg" alt="Madain Saleh">
+          <div class="card-body">
+            <h4>Madain Saleh</h4>
+            <p>The largest conserved site of the civilization of the Nabataeans south of Petra in Jordan.</p>
+            <a href="https://en.wikipedia.org/wiki/Hegra_%28Mada%27in_Salih%29" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="3908466-131943624.jpg" alt="Al Ula">
+          <div class="card-body">
+            <h4>Al Ula</h4>
+            <p>A historical and cultural oasis in the heart of the desert, with stunning rock formations and ancient tombs.</p>
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.arabnews.com%2Fnode%2F2337941%2Fsaudi-arabia&psig=AOvVaw3KKPlSbIp4ieiq85ZmPNOc&ust=1705041225123000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCLjm8Nfb1IMDFQAAAAAdAAAAABAD" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Riyadh-The-Dead-Center-of-the-Saudi-Arabia-Kingdom1[1].jpg" alt="Riyadh">
+          <div class="card-body">
+            <h4>Riyadh</h4>
+            <p>The capital and largest city of Saudi Arabia, a modern metropolis with skyscrapers and shopping malls.</p>
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbenkhan.com%2Farticles%2F114%2Fabout-riyadh&psig=AOvVaw11uysANdojkDLtQDAg13Rh&ust=1705041315430000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCNCX0YXc1IMDFQAAAAAdAAAAABAD" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Filter options -->
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Filter by Category</h3>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary">All</button>
+          <button type="button" class="btn btn-secondary">Historical Sites</button>
+          <button type="button" class="btn btn-secondary">Natural Wonders</button>
+          <button type="button" class="btn btn-secondary">Urban Destinations</button>
+        </div>
+      </div>
+    </div>
+    <!-- Destination cards -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="91plodynIIL._AC_UF1000,1000_QL80_.jpg" alt="Jeddah">
+          <div class="card-body">
+            <h4>Jeddah</h4>
+            <p>The gateway to Mecca and Medina, a coastal city with a rich cultural heritage and a vibrant nightlife.</p>
+            <a href="https://www.amazon.com/Mecca-Blessed-Medina-Radiant-Holiest/dp/0804849161" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="ar_saudi-asir-prov-ape_04.jpg" alt="Abha">
+          <div class="card-body">
+            <h4>Abha</h4>
+            <p>The capital of the Asir region, a mountainous area with lush greenery and cool climate.</p>
+            <a href="https://aramcoexpats.com/articles/saudi-s-asir-province-a-photo-essay/?fbclid=IwAR0lEr9AdcxuS1cogd3O0NADZiiSpBDz1vDQdNw_AJJfDAAl5dw8joqfunw" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="site_1563_0019-1200-630-20200605160540.jpg" alt="Al Ahsa">
+          <div class="card-body">
+            <h4>Al Ahsa</h4>
+            <p>The largest oasis in the world, with palm groves, natural springs, and historical monuments.</p>
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwhc.unesco.org%2Fen%2Flist%2F1563%2F&psig=AOvVaw3uMYYCY1EVJ4JNiXfxQ078&ust=1705041600402000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCKC0i4rd1IMDFQAAAAAdAAAAABAD" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Interactive map -->
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Interactive Map</h3>
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+
+
+      </div>
+    </div>
+  </div>
+  <!-- Link to jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!-- Link to Bootstrap CDN -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Link to Leaflet CDN -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Link to custom JavaScript file -->
+  <script type="text/javascript">
+    // Custom JavaScript file
+
+  // Initialize the map and set its view to the tourism office location
+  var map = L.map('map').setView([24.7136, 46.6753], 13);
+
+  // Add a tile layer from OpenStreetMap
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  // Add a marker with a popup
+  L.marker([24.7136, 46.6753]).addTo(map)
+    .bindPopup('Tourism Office in Saudi Arabia')
+    .openPopup();
+
+  </script>
+</body>
+</html>
